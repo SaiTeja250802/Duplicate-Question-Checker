@@ -174,9 +174,8 @@ app = Flask(__name__)
 
 
 def determine_duplicate(question1, question2):
-    # Implement your logic to check for duplicate questions
-    # For demonstration purposes, let's assume two questions are duplicates if their similarity score is above a certain threshold
-    similarity_threshold = 90  # You can adjust this threshold as needed
+   
+    similarity_threshold = 90  
 
     similarity_score = fuzz.token_set_ratio(question1, question2)
 
